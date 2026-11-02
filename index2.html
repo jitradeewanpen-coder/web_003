@@ -1,0 +1,424 @@
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milky Mellow Cafe</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #dceeff;
+        }
+
+        .banner {
+            width: 100%;
+            min-height: 100vh;
+        }
+
+        .banner img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="banner">
+        <img src="images/banner.png" alt="Milky Mellow Cafe">
+    </div>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SUNDAY CAFE</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Tahoma", sans-serif;
+    background: #fffdf5;
+    color: #66543b;
+}
+
+/* แถบเมนู */
+header {
+    background: #fff1b8;
+    padding: 18px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 3px 10px #e6d9b5;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: #c28b36;
+    letter-spacing: 3px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #725b36;
+    margin-left: 22px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #d69e34;
+}
+
+/* หน้าแรก */
+.hero {
+    min-height: 480px;
+    background: linear-gradient(120deg, #fff0ae, #fff9e9);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero h1 {
+    font-size: 65px;
+    color: #c28b36;
+    letter-spacing: 8px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin: 15px;
+}
+
+.hero button {
+    background: #e8b94e;
+    border: none;
+    padding: 14px 35px;
+    border-radius: 30px;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.hero button:hover {
+    background: #c99532;
+}
+
+/* หัวข้อ */
+section {
+    padding: 65px 8%;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 34px;
+    color: #c28b36;
+    margin-bottom: 12px;
+}
+
+.subtitle {
+    margin-bottom: 35px;
+    color: #9c8968;
+}
+
+/* ตารางสินค้า */
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.product {
+    background: white;
+    border: 2px solid #f4dda0;
+    border-radius: 18px;
+    overflow: hidden;
+    padding-bottom: 20px;
+    box-shadow: 0 5px 15px #eadfbe;
+    transition: 0.3s;
+}
+
+.product:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 10px 20px #dfcfaa;
+}
+
+.product img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+.product h3 {
+    font-size: 21px;
+    margin: 15px 5px 8px;
+    color: #8b6935;
+}
+
+.product p {
+    color: #a28a62;
+    margin-bottom: 12px;
+}
+
+.price {
+    font-size: 21px;
+    font-weight: bold;
+    color: #d49c32;
+}
+
+.product button {
+    background: #f5d77c;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 25px;
+    margin-top: 12px;
+    cursor: pointer;
+    color: #725b36;
+    font-weight: bold;
+}
+
+.product button:hover {
+    background: #e8bc4c;
+}
+
+/* โปรโมชั่น */
+.promotion {
+    background: #fff2c7;
+    border: 2px dashed #e4bc60;
+    border-radius: 25px;
+    padding: 40px 20px;
+}
+
+.promotion h2 {
+    color: #c28b36;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+/* เกี่ยวกับร้าน */
+.about {
+    background: #fff9e9;
+    border-radius: 25px;
+    padding: 40px;
+    line-height: 2;
+}
+
+/* ติดต่อ */
+.contact {
+    background: #fff1b8;
+    line-height: 2.2;
+    border-radius: 25px;
+}
+
+/* ตารางข้อมูล */
+.info-table {
+    width: 100%;
+    max-width: 750px;
+    margin: 25px auto;
+    border-collapse: collapse;
+    background: white;
+}
+
+.info-table td, .info-table th {
+    border: 2px solid #eed68f;
+    padding: 15px;
+}
+
+.info-table th {
+    background: #ffedb0;
+    color: #8b6935;
+}
+
+footer {
+    background: #dcb45c;
+    color: white;
+    padding: 25px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 5px;
+        display: inline-block;
+    }
+
+    .hero h1 {
+        font-size: 43px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- เมนูด้านบน -->
+<header>
+    <div class="logo">☀ SUNDAY</div>
+
+    <nav>
+        <a href="#home">หน้าแรก</a>
+        <a href="#menu">เมนูสินค้า</a>
+        <a href="#promotion">โปรโมชั่น</a>
+        <a href="#about">เกี่ยวกับเรา</a>
+        <a href="#contact">ติดต่อเรา</a>
+    </nav>
+</header>
+
+<!-- หน้าแรก -->
+<div class="hero" id="home">
+    <h1>SUNDAY CAFE</h1>
+    <p>☀ A Little Happiness In Every Bite ☀</p>
+    <p>เติมความสุขในทุกวัน ด้วยขนมหวานแสนอร่อย</p>
+
+    <button onclick="location.href='#menu'">
+        ดูเมนูของเรา ♡
+    </button>
+</div>
+
+<!-- เมนูสินค้า -->
+<section id="menu">
+    <h2 class="section-title">OUR MENU ♡</h2>
+    <p class="subtitle">เลือกความอร่อยที่คุณชื่นชอบ</p>
+
+    <div class="menu-container">
+
+        <div class="product">
+            <img src="images/bingsu.jpg" alt="บิงซูมะม่วง">
+            <h3>Mango Bingsu</h3>
+            <p>บิงซูมะม่วงครีมสด</p>
+            <div class="price">฿129</div>
+            <button onclick="order('Mango Bingsu')">สั่งซื้อ</button>
+        </div>
+
+        <div class="product">
+            <img src="images/cakecake.jpg" alt="เค้กผลไม้">
+            <h3>Fruit Cake</h3>
+            <p>เค้กครีมสดผลไม้รวม</p>
+            <div class="price">฿89</div>
+            <button onclick="order('Fruit Cake')">สั่งซื้อ</button>
+        </div>
+
+        <div class="product">
+            <img src="images/latte.jpg" alt="มัทฉะสตรอว์เบอร์รี">
+            <h3>Matcha Strawberry</h3>
+            <p>มัทฉะนมสดสตรอว์เบอร์รี</p>
+            <div class="price">฿75</div>
+            <button onclick="order('Matcha Strawberry')">สั่งซื้อ</button>
+        </div>
+
+        <div class="product">
+            <img src="images/milk.jpg" alt="นมสดสตรอว์เบอร์รี">
+            <h3>Strawberry Milk</h3>
+            <p>นมสดสตรอว์เบอร์รี</p>
+            <div class="price">฿65</div>
+            <button onclick="order('Strawberry Milk')">สั่งซื้อ</button>
+        </div>
+
+        <div class="product">
+            <img src="images/pudding.jpg" alt="พุดดิ้งแมว">
+            <h3>Cat Pudding</h3>
+            <p>พุดดิ้งคาราเมลสุดน่ารัก</p>
+            <div class="price">฿59</div>
+            <button onclick="order('Cat Pudding')">สั่งซื้อ</button>
+        </div>
+
+    </div>
+</section>
+
+<!-- โปรโมชั่น -->
+<section id="promotion">
+    <h2 class="section-title">SPECIAL PROMOTION</h2>
+    <div class="promotion">
+        <h2>☀ SUNDAY SPECIAL ☀</h2>
+        <p>ซื้อเครื่องดื่ม 2 แก้ว ลดทันที 10 บาท</p>
+        <p>แวะมาเติมความหวานให้วันของคุณกันนะ ♡</p>
+    </div>
+</section>
+
+<!-- เกี่ยวกับเรา -->
+<section id="about">
+    <h2 class="section-title">ABOUT SUNDAY</h2>
+    <div class="about">
+        <h3>ยินดีต้อนรับสู่ SUNDAY CAFE ♡</h3>
+        <p>
+            SUNDAY เป็นคาเฟ่ขนมหวานและเครื่องดื่ม
+            ที่อยากมอบความสุขเล็ก ๆ ให้กับทุกคน
+            ผ่านขนมแสนอร่อยและเครื่องดื่มคุณภาพดี
+            พร้อมบรรยากาศอบอุ่น สบาย ๆ
+            เหมาะสำหรับการพักผ่อนและใช้เวลากับคนพิเศษ
+        </p>
+        <p>☀ Sweet Moments, Happy Days ☀</p>
+    </div>
+</section>
+
+<!-- ติดต่อเรา -->
+<section id="contact">
+    <h2 class="section-title">CONTACT US</h2>
+
+    <div class="contact">
+        <p>♡ SUNDAY CAFE ♡</p>
+        <p>Facebook : SUNDAY CAFE</p>
+        <p>Instagram : @sunday.cafe</p>
+        <p>เวลาเปิด-ปิด : 09.00 - 20.00 น.</p>
+        <p>เปิดให้บริการทุกวัน</p>
+    </div>
+
+    <table class="info-table">
+        <tr>
+            <th>ข้อมูลร้าน</th>
+            <th>รายละเอียด</th>
+        </tr>
+        <tr>
+            <td>ชื่อร้าน</td>
+            <td>SUNDAY CAFE</td>
+        </tr>
+        <tr>
+            <td>ประเภท</td>
+            <td>คาเฟ่ขนมหวานและเครื่องดื่ม</td>
+        </tr>
+        <tr>
+            <td>เวลาเปิด</td>
+            <td>09.00 - 20.00 น.</td>
+        </tr>
+    </table>
+</section>
+
+<footer>
+    <h2>☀ SUNDAY CAFE ☀</h2>
+    <p>Thank you for visiting our cafe ♡</p>
+    <p>© 2026 SUNDAY CAFE</p>
+</footer>
+
+<script>
+function order(name) {
+    alert("คุณเลือก " + name + " ♡\nขอบคุณที่สนใจ SUNDAY CAFE");
+}
+</script>
+
+</body>
+</html>
